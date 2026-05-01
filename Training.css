@@ -1,4 +1,4 @@
-
+*,
 *::before,
 *::after {
   margin: 0;
@@ -27,6 +27,7 @@ body {
   padding: 0 20px;
 }
 
+/* HEADER & NAV */
 .eb-nav-root {
   background: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -94,6 +95,7 @@ body {
   font-weight: 800;
 }
 
+/* PAGE CONTENT */
 .eb-page-header {
   background: var(--brand-green);
   color: white;
@@ -152,6 +154,7 @@ body {
   margin-top: 20px;
 }
 
+/* MOBILE NAVIGATION LOGIC */
 .eb-mobile-toggle {
   display: none;
   flex-direction: column;
