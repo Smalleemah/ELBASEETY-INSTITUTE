@@ -1,6 +1,4 @@
-/* =========================================
-   1. CORE VARIABLES & RESET
-   ========================================= */
+
 :root {
   --brand-green: #0b3d2e;
   --brand-gold: #c9a646;
@@ -30,9 +28,6 @@ body {
   padding: 0 20px;
 }
 
-/* =========================================
-   2. HEADER & NAVIGATION
-   ========================================= */
 .eb-nav-root {
   background: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -92,7 +87,6 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* Desktop Navigation */
 .eb-nav-list {
   display: flex;
   list-style: none;
@@ -124,9 +118,8 @@ body {
   font-weight: 800;
 }
 
-/* Hamburger Toggle Button */
 .eb-mobile-toggle {
-  display: none; /* Hidden on desktop */
+  display: none; 
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
@@ -146,9 +139,7 @@ body {
   border-radius: 2px;
 }
 
-/* =========================================
-   3. PAGE HEADER (HERO)
-   ========================================= */
+
 .eb-page-header {
   background: var(--brand-green);
   color: var(--white);
@@ -169,9 +160,7 @@ body {
   opacity: 0.9;
 }
 
-/* =========================================
-   4. SERVICE CONTENT & PROCESS
-   ========================================= */
+
 .eb-service-body {
   padding: 80px 0;
 }
@@ -240,9 +229,6 @@ body {
   opacity: 0.4;
 }
 
-/* =========================================
-   5. CTA & FOOTER
-   ========================================= */
 .eb-service-cta {
   text-align: center;
   margin-top: 60px;
@@ -272,19 +258,18 @@ body {
   margin-top: 100px;
 }
 
-/* =========================================
-   6. RESPONSIVE MEDIA QUERIES
-   ========================================= */
+
+
 @media (max-width: 850px) {
   /* Navigation Fixes */
   .eb-mobile-toggle {
-    display: flex; /* Show hamburger */
+    display: flex; 
   }
 
   .eb-menu-wrapper {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off-screen */
+    right: -100%; 
     width: 300px;
     height: 100vh;
     background: var(--white);
@@ -317,7 +302,7 @@ body {
     text-align: center;
   }
 
-  /* Hamburger Animation */
+ 
   .eb-mobile-toggle.is-active .eb-bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -328,7 +313,7 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Structural Fixes for Mobile */
+  
   .eb-top-flex {
     flex-direction: column;
     align-items: center;
@@ -345,6 +330,6 @@ body {
   }
 
   .eb-process-grid {
-    grid-template-columns: 1fr; /* Stack cards on mobile */
+    grid-template-columns: 1fr; 
   }
 }
